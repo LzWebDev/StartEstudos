@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC </title>
+
+    <link rel="stylesheet" href="calculadoraimc.js">
+    <style>
+        body{
+            font-size: 1.3em;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        p{
+            font-size: 22px;
+        }
+
+        input{
+            width: 16vw;
+            height: 20px;
+        }
+
+        form{
+            margin: 0 auto;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0px ;
+            background-color: white;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        form button{
+            font-size: 1.4em;
+            border-radius: 2em;
+        }
+
+        form button:hover{
+            background-color: green;
+            transition: 1s;
+        }
+
+        div.pesoIdeal{
+            margin: auto;
+            display: flexbox;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 24px;
+            width: 300px;
+            margin-top: 20px;
+            height: 2em;
+            line-height: 0.5em;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgba(0, 0, 0, 0.247);
+            border-radius: 0.2em;
+            box-shadow: 0px 0px 20px 5px rgb(10, 10, 8);
+        }
+
+        .pesoIdeal-bom{
+            margin: auto;
+            font-size: 1em;
+            text-align: center;
+            height: 2em;
+            background-color: rgb(91, 230, 91);
+            line-height: 2em;
+        }
+
+        .pesoIdeal-ruim{
+            margin: auto;
+            font-size: 1em;
+            text-align: center;
+            height: 2em;
+            background-color: rgb(233, 79, 74);
+            line-height: 2em;
+        }
+
+        .caixa{
+            width: 500px;
+            height: 700px;
+            background-color: aliceblue;
+            border: 1px solid black ;
+            padding: 30px;
+            margin: 30px auto;
+            display: flexbox;
+        }
+
+
+    
+    </style>
+</head>
+
+<body>
+    <div class="caixa">
+        <form action="" id="calculadoraIMC">
+
+            <h1>Calculadora IMC</h1>
+            <p>Peso:</p>
+            <input type="text" class="pesoP"><br>
+            <p>Altura:</p>
+            <input type="text" class="alturaP"><br>
+
+            <button>Calcular</button>
+        </form>
+
+        <div class="pesoIdeal"></div>
+    </div>
+    <script src="calculadoraimc.js"></script>
+
+</body>
+</html>
